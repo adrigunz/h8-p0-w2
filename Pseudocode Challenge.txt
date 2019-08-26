@@ -1,0 +1,95 @@
+I. Newton Second Law
+Algoritma:
+1. Masukkan Value massa benda (m) sebesar 600 kg
+2. Masukkan value percepatan benda (a) sebesar 2 m/s2
+3. Hitung resultan gaya (newton) dengan rumus massa benda (m) kali percepatan benda (a)
+4. Print hasil dari resultan gaya (newton) ke layar
+
+Pseudocode:
+START
+
+    SET 'mass' WITH value 600
+    SET 'acceleration' WITH value 2
+    SET 'newton' by CALCULATE 'mass' multiplied by 'acceleration'
+    PRINT 'newton'
+
+END
+
+II. Tahun Kabisat
+Algoritma:
+1. Minta input sebuah tahun (year) dari user
+2. Buat sebuah kondisi:
+    a. Jika input tahun modulo 4 sama dengan 0 DAN modulo 100 tidak sama dengan 0
+        Maka Print "Ini tahun Kabisat!" ke layar.
+    b. Jika input tahun modulo 4 sama dengan 0 DAN modulo 100 sama dengan 0 DAN modulo 400 sama dengan 0
+        Maka Print "Ini juga tahun Kabisat Sob!" ke layar.
+    c. Jika kondisi nya diluar kondisi a dan b
+        Maka Print "Ini bukan tahun Kabisat Sob!" ke layar.
+
+
+Pseudocode:
+START
+
+    OBTAIN value of 'year' from user
+    IF 'year' MOD 4 EQUALS 0 AND 'year' MOD 100 NOT EQUALS TO 0 THEN
+        PRINT "This is a Leap Year!" to the screen
+    ELSE IF 'year' MOD 4 EQUALS 0 AND 'year' MOD 100 EQUALS 0 AND 'year' MOD 400 EQUALS 0 THEN
+        PRINT "This is also a Leap Year!" 
+    ELSE
+        PRINT "This is not a Leap Year!" 
+    ENDIF
+
+END
+
+III. Laundry Day
+Algoritma:
+1. Masukkan Value 'Baju Foxie' sejumlah 20
+2. Buat sebuah algoritma pengulangan:
+    a. Jika 'Baju Foxie' Masih Lebih Besar dari 0 DAN kurang dari sama dengan 20
+        Maka Print "Baju Foxie masih ada (Jumlah 'Baju Foxie') nih yang belom dimasukin ke mesin cuci, ayo masukin!" ke layar.
+        Kurangin value 'Baju Foxie' sejumlah 1 Baju
+    b. Selain itu 
+        Maka Print "Baju Foxie udah masuk mesin cuci semua nih, ayo kita cuci sekarang!"
+
+Pseudocode:
+START
+
+    SET 'foxieClothes' WITH value 20
+    IF 'foxieClothes' is MORE THAN 0 AND LESS THAN EQUALS 20 THEN
+        PRINT "There is still + (amount of 'foxieClothes') + clothes left, let's continue to put it in!" 
+        DECREMENT 'foxieClothes' by 1
+    ELSE
+        PRINT "All of Foxie's clothes are in, now let's turn on the washing machine!" 
+    ENDIF
+
+END
+
+IV. Periksa Kuku
+Algoritma:
+1. Masukkan Value 'Jumlah Murid' sebesar 40
+2. Minta input 'Kuku Panjang' ke murid apakah benar atau tidak.
+2. Buatlah sebuah kondisi boolean:
+    a. Jika kondisi 'Kuku Panjang' adalah BENAR DAN 'Jumlah Murid' LEBIH BESAR dari 0
+        Maka Print 'Saya Hukum kamu berdiri depan kelas satu kaki sepanjang kelas saya!' ke layar.
+        Kurangi 'Jumlah Murid' sejumlah 1 orang
+    b. Jika kondisi 'Kuku Panjang' adalah SALAH DAN 'Jumlah Murid' LEBIH BESAR dari 0
+        Maka Print 'Nah gini nih contoh murid teladan, jangan tiru yang di depan kelas itu ya!' ke layar.
+        Kurangi 'Jumlah Murid' sejumlah 1 orang
+    c. Selain itu
+        Maka Print 'Oke pengecekan kuku murid sudah selesai, ayo kita mulai belajar sekarang!' ke layar.
+Pseudocode:
+START
+
+    SET 'studentNumber' WITH value 40
+    OBTAIN boolean input 'longNails' from student
+    IF 'longNails' EQUALS TRUE AND 'studentNumber' is MORE THAN 0 THEN
+        PRINT "You are a bad student! stand in front of class with one leg in the air, now!" 
+        DECREMENT 'studentNumber' by 1
+    ELSE IF 'longNails' EQUALS FALSE AND 'studentNumber' is MORE THAN 0 THEN
+        PRINT "You are a good student! don't do what the bad students did, capisce?" 
+        DECREMENT 'studentNumber' by 1
+    ELSE
+        PRINT "Okay, student nail checking session is done, let's begin class now!" 
+    ENDIF
+END
+
