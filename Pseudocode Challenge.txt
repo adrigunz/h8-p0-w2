@@ -41,6 +41,8 @@ START
 
 END
 
+Comment: for task number 3 and 4 I am changing from using IF-ELSE to WHILE Loop because of the limitation
+
 III. Laundry Day
 Algoritma:
 1. Masukkan Value 'Baju Foxie' sejumlah 20
